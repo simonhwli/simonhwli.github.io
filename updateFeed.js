@@ -1,4 +1,4 @@
-export function generateJWPlayerRSS(playlist_id, jwplayer_api_key) {
+export default function generateJWPlayerRSS(playlist_id, jwplayer_api_key) {
   const endpoint = `https://cdn.jwplayer.com/v2/playlists/${playlist_id}`;
 
   const headers = {
