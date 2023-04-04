@@ -8,7 +8,7 @@
 </head>
 <body>
 	<a class="btn btn-rss" href="/testfeed.xml" target="_blank">RSS</a>
-	<script src="jwplayer-rss.js"></script>
+	<script src="updateFeed.js"></script>
 	<script>
 		const rss = generateJWPlayerRSS("bIs9UNqY", "VZwxV83odDrN3U0SnOq6QmInU1c1Q00yRkxXRFZYVnpKR2QzRlpRa0Z4TW1GblJuZDUn");
 		rss.then((xml) => console.log(xml)).catch((error) => console.error(error));
