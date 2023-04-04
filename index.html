@@ -8,16 +8,8 @@
 </head>
 <body>
 	<a class="btn btn-rss" href="/testfeed.xml" target="_blank">RSS</a>
-	<div id="rss-feed"></div>
-	<script type="module">
-		import generateJWPlayerRSS from './updateFeed.js';
-
-		const rss = generateJWPlayerRSS("bIs9UNqY", "VZwxV83odDrN3U0SnOq6QmInU1c1Q00yRkxXRFZYVnpKR2QzRlpRa0Z4TW1GblJuZDUn");
-		rss.then((xml) => {
-			console.log(xml);
-			const feedElement = document.getElementById('rss-feed');
-			feedElement.innerHTML = xml;
-		}).catch((error) => console.error(error));
-	</script>
+	
+	<h2>HELLO WORLD!</h2>>
+	<div id="rss-feed">RSS FEED TEST</div>
 </body>
 </html>
