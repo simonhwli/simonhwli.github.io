@@ -1,4 +1,4 @@
-export function getJWPlayerPlaylistData(playlist_id, jwplayer_api_key) {
+export default function getJWPlayerPlaylistData(playlist_id, jwplayer_api_key) {
   const options = {
     method: 'GET',
     headers: {
