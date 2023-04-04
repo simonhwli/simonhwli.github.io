@@ -1,4 +1,4 @@
-async function generateJWPlayerRSS(playlist_id, jwplayer_api_key) {
+function extractJWPlayerRSSData(playlist_id, jwplayer_api_key) {
   const endpoint = `https://cdn.jwplayer.com/v2/playlists/${playlist_id}`;
 
   const headers = {
@@ -6,61 +6,53 @@ async function generateJWPlayerRSS(playlist_id, jwplayer_api_key) {
     Authorization: `Bearer ${jwplayer_api_key}`,
   };
 
-  try {
-    const response = await fetch(endpoint, { headers });
-    const data = await response.json();
-
-    const rss = {
-      "@": {
-        version: "2.0",
-      },
-      channel: {
-        title: data.playlist.title,
-        link: data.playlist.link,
-        description: data.playlist.description,
-        lastBuildDate: new Date().toUTCString(),
-        ttl: "60",
-        item: [],
-      },
-    };
-
-    data.playlist.forEach((item) => {
-      const newItem = {
-        title: item.title,
-        link: item.link,
-        pubDate: item.published_at,
-        description: item.description,
-        "media:content": {
-          "@": {
-            url: item.sources[0].file,
-          },
+  return fetch(endpoint, { headers })
+    .then((response) => response.json())
+    .then((data) => {
+      const rss = {
+        "@": {
+          version: "2.0",
         },
-        guid: {
-          "@": {
-            isPermaLink: "false",
-          },
-          "#": item.id,
+        channel: {
+          title: data.playlist.title,
+          link: data.playlist.link,
+          description: data.playlist.description,
+          lastBuildDate: new Date().toUTCString(),
+          ttl: "60",
+          item: [],
         },
       };
 
-      rss.channel.item.push(newItem);
-    });
+      data.playlist.forEach((item) => {
+        const newItem = {
+          title: item.title,
+          link: item.link,
+          pubDate: item.published_at,
+          description: item.description,
+          "media:content": {
+            "@": {
+              url: item.sources[0].file,
+            },
+          },
+          guid: {
+            "@": {
+              isPermaLink: "false",
+            },
+            "#": item.id,
+          },
+        };
 
-    const parser = new DOMParser();
-    const xml = parser
-      .parseFromString(rss2.toXml(rss), "application/xml")
-      .getElementsByTagName("rss")[0].outerHTML;
+        rss.channel.item.push(newItem);
+      });
 
-    return xml;
-  } catch (error) {
-    console.error(error);
-  }
-}
+      const parser = new DOMParser();
+      const xml = parser
+        .parseFromString(rss2.toXml(rss), "application/xml")
+        .getElementsByTagName("rss")[0]
+        .outerHTML;
 
-function logJWPlayerRSS(playlist_id, jwplayer_api_key) {
-  generateJWPlayerRSS(playlist_id, jwplayer_api_key)
-    .then((xml) => console.log(xml))
+      return xml;
+    })
     .catch((error) => console.error(error));
 }
 
-export { logJWPlayerRSS };
