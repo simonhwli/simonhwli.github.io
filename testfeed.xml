@@ -16,13 +16,15 @@
             <guid isPermaLink="false">ld5f4zzQ</guid>
             <enclosure url="https://cdn.jwplayer.com/videos/ld5f4zzQ-OrS2U3Ev.mp4" type="video/mp4" length="372"/>
             <jwplayer:feedid>bIs9UNqY</jwplayer:feedid>
-            <media:content url="https://cdn.jwplayer.com/manifests/ld5f4zzQ.m3u8" medium="video" type="application/vnd.apple.mpegurl" duration="372"/>
-            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-p7rclwET.mp4" medium="video" type="video/mp4" duration="372" width="320" height="180" fileSize="10489513"/>
-            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-9KP6EJAB.mp4" medium="video" type="video/mp4" duration="372" width="480" height="270" fileSize="14413867"/>
-            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-OrS2U3Ev.mp4" medium="video" type="video/mp4" duration="372" width="640" height="360" fileSize="16718128"/>
-            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-LPpQ4sKy.m4a" medium="video" type="audio/mp4" duration="372" fileSize="5281258"/>
-            <media:thumbnail url="https://cdn.jwplayer.com/v2/media/ld5f4zzQ/poster.jpg?width=720" width="720" />
-            <media:keywords>test-msn,Higher Education</media:keywords>
+            <media:group>
+                <media:content url="https://cdn.jwplayer.com/manifests/ld5f4zzQ.m3u8" medium="video" type="application/vnd.apple.mpegurl" duration="372"/>
+                <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-p7rclwET.mp4" medium="video" type="video/mp4" duration="372" width="320" height="180" fileSize="10489513"/>
+                <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-9KP6EJAB.mp4" medium="video" type="video/mp4" duration="372" width="480" height="270" fileSize="14413867"/>
+                <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-OrS2U3Ev.mp4" medium="video" type="video/mp4" duration="372" width="640" height="360" fileSize="16718128"/>
+                <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-LPpQ4sKy.m4a" medium="video" type="audio/mp4" duration="372" fileSize="5281258"/>
+                <media:thumbnail url="https://cdn.jwplayer.com/v2/media/ld5f4zzQ/poster.jpg?width=720" width="720" />
+                <media:keywords>test-msn,Higher Education</media:keywords>
+            </media:group>
             <jwplayer:track file="https://cdn.jwplayer.com/strips/ld5f4zzQ-120.vtt" kind="thumbnails"/>
             <jwplayer:import_id>jHPSSonL</jwplayer:import_id>
             <jwplayer:import_guid>en.video.talk.ted.com:107309</jwplayer:import_guid>
