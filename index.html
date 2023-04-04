@@ -2,21 +2,17 @@
 <html>
 <head>
 	<link rel="alternate" type="application/atom+xml" title="simonhwli feed" href="/testfeed.xml">
-	<script src="./updateFeed.js">
-		(async () => {
-			const playlist = await fetchPlaylist();
-			const xml = generateRssFeed(playlist);
-			const modifiedXml = removeMediaGroup(xml);
-			document.getElementById('rss-feed').innerHTML = modifiedXml;
-		})();
-	</script>
 	<title>Page Title</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<a class="btn btn-rss" href="/testfeed.xml" target="_blank">RSS</a>
-	
+	<script src="jwplayer-rss.js"></script>
+	<script>
+		const rss = generateJWPlayerRSS("bIs9UNqY", "VZwxV83odDrN3U0SnOq6QmInU1c1Q00yRkxXRFZYVnpKR2QzRlpRa0Z4TW1GblJuZDUn");
+		rss.then((xml) => console.log(xml)).catch((error) => console.error(error));
+	</script>
 	<h2>HELLO WORLD!</h2>>
 	<div id="rss-feed"></div>
 </body>
