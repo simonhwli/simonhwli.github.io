@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:jwplayer="http://rss.jwpcdn.com/">
+    <channel>
+        <title>MSN - NTL Test</title>
+        <description>Test playlist for NTL </description>
+        <jwplayer:kind>MANUAL</jwplayer:kind>
+        <jwplayer:feedid>bIs9UNqY</jwplayer:feedid>
+        <jwplayer:feed_instance_id>c268b2b8-d015-4103-8c89-893bb34b5777</jwplayer:feed_instance_id>
+        <jwplayer:link rel="first" href="https://cdn.jwplayer.com/v2/playlists/bIs9UNqY?format=mrss&amp;internal=false&amp;page_offset=1&amp;page_limit=500"/>
+        <jwplayer:link rel="last" href="https://cdn.jwplayer.com/v2/playlists/bIs9UNqY?format=mrss&amp;internal=false&amp;page_offset=1&amp;page_limit=500"/>
+        <item>
+            <title>How to quit your job -- without ruining your career | Gala Jackson</title>
+            <link>https://cdn.jwplayer.com/previews/ld5f4zzQ</link>
+            <description>Stuck in an unfulfilling or stagnant job? To achieve a smooth departure without burning bridges, try this three-step exit strategy from career coach Gala Jackson. She&#39;ll help you move on to your next position with courage, confidence and clarity.</description>
+            <pubDate>Wed, 01 Mar 2023 15:05:25 -0000</pubDate>
+            <guid isPermaLink="false">ld5f4zzQ</guid>
+            <enclosure url="https://cdn.jwplayer.com/videos/ld5f4zzQ-OrS2U3Ev.mp4" type="video/mp4" length="372"/>
+            <jwplayer:feedid>bIs9UNqY</jwplayer:feedid>
+            <media:group>
+            <media:content url="https://cdn.jwplayer.com/manifests/ld5f4zzQ.m3u8" medium="video" type="application/vnd.apple.mpegurl" duration="372"/>
+            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-p7rclwET.mp4" medium="video" type="video/mp4" duration="372" width="320" height="180" fileSize="10489513"/>
+            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-9KP6EJAB.mp4" medium="video" type="video/mp4" duration="372" width="480" height="270" fileSize="14413867"/>
+            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-OrS2U3Ev.mp4" medium="video" type="video/mp4" duration="372" width="640" height="360" fileSize="16718128"/>
+            <media:content url="https://cdn.jwplayer.com/videos/ld5f4zzQ-LPpQ4sKy.m4a" medium="video" type="audio/mp4" duration="372" fileSize="5281258"/>
+            <media:thumbnail url="https://cdn.jwplayer.com/v2/media/ld5f4zzQ/poster.jpg?width=720" width="720" />
+            <media:keywords>test-msn,Higher Education</media:keywords>
+            </media:group>
+            <jwplayer:track file="https://cdn.jwplayer.com/strips/ld5f4zzQ-120.vtt" kind="thumbnails"/>
+            <jwplayer:import_id>jHPSSonL</jwplayer:import_id>
+            <jwplayer:import_guid>en.video.talk.ted.com:107309</jwplayer:import_guid>
+            <jwplayer:mrss_video_url>https://download.ted.com/products/163438.mp4?apikey=172BB350-0205</jwplayer:mrss_video_url>
+        </item>
+    </channel>
+</rss>
