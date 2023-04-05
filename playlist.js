@@ -1,6 +1,5 @@
 export default async function updateDynamicPlaylistMedia(playlistId, jwplayerApiKey) {
-  const endpoint = `https://api.jwplayer.com/v2/playlists/${playlistId}/media`;
-
+    const endpoint = `https://api.jwplayer.com/v2/sites/GRJTlii1/playlists/${playlist_id}/`;
   const headers = {
     "Content-Type": "application/json",
     Authorization: `Bearer ${jwplayerApiKey}`,
