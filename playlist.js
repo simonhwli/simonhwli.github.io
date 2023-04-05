@@ -1,4 +1,4 @@
-export default async function updateDynamicPlaylistMedia(playlist_id, jwplayerApiKey) {
+async function updateDynamicPlaylistMedia(playlist_id, jwplayerApiKey) {
     const endpoint = `https://api.jwplayer.com/v2/sites/GRJTlii1/playlists/${playlist_id}/`;
     const headers = {
         "Content-Type": "application/json",
@@ -36,4 +36,4 @@ export default async function updateDynamicPlaylistMedia(playlist_id, jwplayerAp
 }
 
 // Export the function so it can be used in other files
-//module.exports = { updateDynamicPlaylistMedia };
+module.exports = { updateDynamicPlaylistMedia };
