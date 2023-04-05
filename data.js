@@ -1,4 +1,4 @@
-const { updateDynamicPlaylistMedia } = require("./playlist.js");
+import { updateDynamicPlaylistMedia } from "./playlist.js";
 
 export default function getJWPlayerPlaylistData(playlist_id, jwplayer_api_key) {
   const options = {
